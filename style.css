@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif; /* Mengatur font utama untuk halaman */
+    background-color: #f4f4f4; /* Mengatur warna latar belakang halaman */
+    color: #333; /* Mengatur warna teks utama */
+    text-align: center; /* Mengatur teks di tengah secara horizontal */
+    padding: 20px; /* Memberikan padding sekitar halaman */
+}
+
+#app {
+    max-width: 400px; /* Mengatur lebar maksimal kontainer aplikasi */
+    margin: 0 auto; /* Memposisikan kontainer aplikasi di tengah secara horizontal */
+    background: #fff; /* Mengatur warna latar belakang kontainer aplikasi */
+    padding: 20px; /* Memberikan padding dalam kontainer aplikasi */
+    border-radius: 10px; /* Membuat sudut kontainer aplikasi menjadi melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan halus di sekitar kontainer aplikasi */
+}
+
+#timeDisplay {
+    font-size: 2em; /* Mengatur ukuran font lebih besar untuk tampilan waktu */
+    margin-bottom: 20px; /* Menambahkan jarak di bawah elemen tampilan waktu */
+}
+
+#controls button {
+    padding: 10px 20px; /* Menambahkan padding di dalam tombol */
+    margin: 5px; /* Menambahkan jarak antar tombol */
+    font-size: 1em; /* Mengatur ukuran font dalam tombol */
+}
+
+#lapsContainer {
+    margin-top: 20px; /* Menambahkan jarak di atas kontainer untuk daftar lap */
+    text-align: left; /* Mengatur teks di dalam kontainer menjadi rata kiri */
+}
+
+#lapsList {
+    list-style: none; /* Menghapus penanda bullet atau numbering dari daftar */
+    padding: 0; /* Menghapus padding default dari elemen daftar */
+}
+
+#settingsContainer {
+    margin-top: 20px; /* Menambahkan jarak di atas kontainer untuk pengaturan */
+    text-align: left; /* Mengatur teks di dalam kontainer menjadi rata kiri */
+}
+
+#settingsContainer label, #settingsContainer select, #settingsContainer input, #settingsContainer button {
+    display: block; /* Menampilkan elemen pengaturan sebagai blok */
+    margin: 10px 0; /* Menambahkan jarak atas dan bawah untuk setiap elemen pengaturan */
+    width: 100%; /* Mengatur lebar elemen pengaturan agar memenuhi kontainer */
+}
+
+body.dark {
+    background-color: #333; /* Mengubah warna latar belakang halaman menjadi lebih gelap pada mode gelap */
+    color: #fff; /* Mengubah warna teks menjadi putih pada mode gelap */
+}
+
+body.dark #app {
+    background: #444; /* Mengubah warna latar belakang kontainer aplikasi menjadi lebih gelap pada mode gelap */
+}

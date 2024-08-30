@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta charset untuk mendefinisikan encoding karakter dokumen -->
+    <meta charset="UTF-8">
+    <!-- Meta viewport untuk memastikan tampilan responsif pada perangkat seluler -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title untuk mendefinisikan judul halaman yang ditampilkan pada tab browser -->
+    <title>Timer / Stopwatch</title>
+    <!-- Link ke file CSS eksternal untuk styling halaman -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Div utama yang membungkus seluruh aplikasi -->
+    <div id="app">
+        <!-- Elemen h1 untuk menampilkan judul mode yang sedang aktif, defaultnya 'Stopwatch' -->
+        <h1 id="modeTitle">Stopwatch</h1>
+        <!-- Elemen div untuk menampilkan waktu berjalan dalam format jam, menit, detik, dan milidetik -->
+        <div id="timeDisplay">00:00:00.000</div>
+        <!-- Div untuk menampung kontrol tombol start, reset, dan lap -->
+        <div id="controls">
+            <!-- Tombol untuk memulai dan menghentikan timer -->
+            <button id="startPauseBtn">Start</button>
+            <!-- Tombol untuk mereset timer dan lap -->
+            <button id="resetBtn">Reset</button>
+            <!-- Tombol untuk mencatat waktu lap -->
+            <button id="lapBtn">Lap</button>
+        </div>
+        <!-- Div untuk menampung daftar lap yang tercatat -->
+        <div id="lapsContainer">
+            <!-- Judul untuk bagian lap -->
+            <h2>Laps</h2>
+            <!-- Unordered list untuk menampilkan daftar lap yang telah disimpan -->
+            <ul id="lapsList"></ul>
+        </div>
+        <!-- Fieldset untuk membungkus bagian pengaturan aplikasi -->
+        <fieldset id="settingsContainer">
+            <!-- Legend untuk memberikan judul pada fieldset pengaturan -->
+            <legend>Settings</legend>
+            <!-- Label dan select dropdown untuk memilih mode stopwatch atau countdown -->
+            <label for="modeSwitch">Mode:</label>
+            <select id="modeSwitch">
+                <option value="stopwatch">Stopwatch</option>
+                <option value="countdown">Countdown</option>
+            </select>
+            <!-- Label dan input time untuk mengatur waktu manual saat menggunakan mode countdown -->
+            <label for="manualTime">Set Time (Countdown):</label>
+            <input type="time" id="manualTime" step="1">
+            <!-- Label dan select dropdown untuk memilih tema tampilan (light atau dark) -->
+            <label for="themeSwitch">Theme:</label>
+            <select id="themeSwitch">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+            <!-- Tombol untuk menyimpan data lap ke file teks -->
+            <button id="saveDataBtn">Save Data</button>
+        </fieldset>
+    </div>
+    <!-- Link ke file JavaScript eksternal yang berisi logika fungsionalitas aplikasi -->
+    <script src="script.js"></script>
+</body>
+</html>
